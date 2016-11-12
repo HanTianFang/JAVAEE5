@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="office" class="test.Office">
+		<property name="officeId" value="003"></property>
+	</bean>
+	<bean id="egg dishes" class="test.Dishes">
+		<property name="dishName" value="fry eggs"></property>
+		<property name="dishPrice" value="20"></property>
+		<property name="car" ref="car"></property>
+	</bean>
+	<bean id="car" class="test.Car">
+		<property name="carId" value="001"></property>
+		<property name="carColor" value="red"></property>
+		<property name="office" ref="office"></property>
+	</bean>
+</beans>
